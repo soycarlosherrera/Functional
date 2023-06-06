@@ -18,7 +18,13 @@ public class _04_OperatorsAndBiFunctions {
 
         UnaryOperator<String> quote = s -> "\"" + s + "\"";
 
+        UnaryOperator<String> addMark = text -> text + "!";
+
         quote.apply("Programming is the art of doing one thing at a time");
+
+        System.out.println(addMark.apply("Hola"));
+
+
     }
 
 
@@ -50,6 +56,10 @@ public class _04_OperatorsAndBiFunctions {
      */
     public static void twiceTheFun() {
         BiFunction<Integer, Integer, Integer> sum = (x, y) -> x + y;
+
+        BiFunction<Integer, Integer, Integer> mul = (x, y) -> x * y;
+
+        mul.apply(5,4);
 
         BiFunction<String, Integer, String> leftPad = (s, i) -> String.format("%" + i + "s", s);
 
