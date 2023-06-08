@@ -29,6 +29,6 @@ public class StringFunction {
         six.operate("Alumno");
 
         DoOperation operateFive = text -> System.out.println(text);
-        operateFive.execute(5,"Platzi");
+        operateFive.execute(5,"Carlos");
     }
 }
